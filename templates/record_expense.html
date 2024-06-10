@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Expense</title>
+</head>
+<body>
+    <h2>Record Expense</h2>
+    <form action="/record_expense" method="post">
+        <label for="user_id">User ID:</label><br>
+        <input type="text" id="user_id" name="user_id" required><br>
+        <label for="expense_amount">Expense Amount:</label><br>
+        <input type="text" id="expense_amount" name="expense_amount" required><br>
+        <label for="expense_type">Expense Type:</label><br>
+        <input type="text" id="expense_type" name="expense_type" required><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <button type="submit">Record Expense</button>
+    </form>
+</body>
+</html>

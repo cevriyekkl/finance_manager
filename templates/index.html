@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borç Takibi</title>
+</head>
+<body>
+    <h1>Borç Takibi</h1>
+    <form action="/track_debt" method="POST">
+        <label for="user_id">Kullanıcı ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <button type="submit">Takip Et</button>
+    </form>
+    <h2>Borçlar:</h2>
+    <ul>
+        {% for debt in debts %}
+        <li>{{ debt.date }} - {{ debt.debt_amount }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Income</title>
+</head>
+<body>
+    <h2>Record Income</h2>
+    <form action="/record_income" method="post">
+        <label for="user_id">User ID:</label><br>
+        <input type="text" id="user_id" name="user_id" required><br>
+        <label for="income_amount">Income Amount:</label><br>
+        <input type="text" id="income_amount" name="income_amount" required><br>
+        <label for="income_source">Income Source:</label><br>
+        <input type="text" id="income_source" name="income_source" required><br>
+        <label for="frequency">Frequency:</label><br>
+        <input type="text" id="frequency" name="frequency" required><br><br>
+        <button type="submit">Record Income</button>
+    </form>
+</body>
+</html>
